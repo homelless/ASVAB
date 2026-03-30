@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		D054A3452F6FCF2800C5E141 /* ASVAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASVAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		D04F57B02F7687B700C21351 /* WelcomeView186.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57AF2F7687B700C21351 /* WelcomeView186.swift */; };
+		D04F57B22F768DCD00C21351 /* WelcomeView187.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57B12F768DCD00C21351 /* WelcomeView187.swift */; };
+		D04F57B62F76B90600C21351 /* DateTripleWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57B52F76B90600C21351 /* DateTripleWheelPicker.swift */; };
+		D054A3572F6FCF3700C5E141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D054A3532F6FCF3700C5E141 /* Assets.xcassets */; };
+		D054A3582F6FCF3700C5E141 /* ASVABApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A3542F6FCF3700C5E141 /* ASVABApp.swift */; };
+		D054A35E2F6FFE3200C5E141 /* WelcomeView190.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A35D2F6FFE3200C5E141 /* WelcomeView190.swift */; };
+		D054A3602F70036900C5E141 /* WelcomeView184.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A35F2F70036900C5E141 /* WelcomeView184.swift */; };
+		D054A3622F7578DC00C5E141 /* WelcomeView185.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A3612F7578DB00C5E141 /* WelcomeView185.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D054A3472F6FCF2800C5E141 /* ASVAB */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ASVAB;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		D04F57AF2F7687B700C21351 /* WelcomeView186.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView186.swift; sourceTree = "<group>"; };
+		D04F57B12F768DCD00C21351 /* WelcomeView187.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView187.swift; sourceTree = "<group>"; };
+		D04F57B52F76B90600C21351 /* DateTripleWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTripleWheelPicker.swift; sourceTree = "<group>"; };
+		D054A3452F6FCF2800C5E141 /* ASVAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASVAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D054A3532F6FCF3700C5E141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D054A3542F6FCF3700C5E141 /* ASVABApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVABApp.swift; sourceTree = "<group>"; };
+		D054A35D2F6FFE3200C5E141 /* WelcomeView190.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView190.swift; sourceTree = "<group>"; };
+		D054A35F2F70036900C5E141 /* WelcomeView184.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView184.swift; sourceTree = "<group>"; };
+		D054A3612F7578DB00C5E141 /* WelcomeView185.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView185.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D054A3422F6FCF2800C5E141 /* Frameworks */ = {
@@ -29,10 +40,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D04F57B42F76B8F100C21351 /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				D04F57B52F76B90600C21351 /* DateTripleWheelPicker.swift */,
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
 		D054A33C2F6FCF2800C5E141 = {
 			isa = PBXGroup;
 			children = (
-				D054A3472F6FCF2800C5E141 /* ASVAB */,
+				D054A3562F6FCF3700C5E141 /* ASVAB */,
 				D054A3462F6FCF2800C5E141 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,37 @@
 				D054A3452F6FCF2800C5E141 /* ASVAB.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D054A3562F6FCF3700C5E141 /* ASVAB */ = {
+			isa = PBXGroup;
+			children = (
+				D04F57B42F76B8F100C21351 /* Helps */,
+				D054A35C2F6FFDD500C5E141 /* App */,
+				D054A35B2F6FFDBB00C5E141 /* WelcomeViews */,
+				D054A3532F6FCF3700C5E141 /* Assets.xcassets */,
+			);
+			path = ASVAB;
+			sourceTree = "<group>";
+		};
+		D054A35B2F6FFDBB00C5E141 /* WelcomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				D04F57B12F768DCD00C21351 /* WelcomeView187.swift */,
+				D04F57AF2F7687B700C21351 /* WelcomeView186.swift */,
+				D054A3612F7578DB00C5E141 /* WelcomeView185.swift */,
+				D054A35D2F6FFE3200C5E141 /* WelcomeView190.swift */,
+				D054A35F2F70036900C5E141 /* WelcomeView184.swift */,
+			);
+			path = WelcomeViews;
+			sourceTree = "<group>";
+		};
+		D054A35C2F6FFDD500C5E141 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D054A3542F6FCF3700C5E141 /* ASVABApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +109,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D054A3472F6FCF2800C5E141 /* ASVAB */,
 			);
 			name = ASVAB;
 			packageProductDependencies = (
@@ -109,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D054A3572F6FCF3700C5E141 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D054A3582F6FCF3700C5E141 /* ASVABApp.swift in Sources */,
+				D04F57B22F768DCD00C21351 /* WelcomeView187.swift in Sources */,
+				D054A35E2F6FFE3200C5E141 /* WelcomeView190.swift in Sources */,
+				D04F57B02F7687B700C21351 /* WelcomeView186.swift in Sources */,
+				D04F57B62F76B90600C21351 /* DateTripleWheelPicker.swift in Sources */,
+				D054A3602F70036900C5E141 /* WelcomeView184.swift in Sources */,
+				D054A3622F7578DC00C5E141 /* WelcomeView185.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
