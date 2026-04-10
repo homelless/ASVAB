@@ -1,11 +1,17 @@
 import SwiftUI
 
-struct WelcomeView187: View {
+struct WelcomeView189: View {
+    
     private let baselineWidth: CGFloat = 393
     private let baselineHeight: CGFloat = 852
     
     @State var selectionDate = Date()
-    @State var checkmark = false
+    @State var selectionToggle = false
+    
+    @State var hour: Int = 8
+    @State var minute: Int = 0
+    @State var period: String = "AM"
+
     
     var body: some View {
         GeometryReader { geo in
@@ -16,11 +22,11 @@ struct WelcomeView187: View {
             let scaleW = w / baselineWidth
             let scaleH = h / baselineHeight
             
-            let widthCalendar = 246.43 * scaleW
-            let heightCalendar = 238.32 * scaleH
+            let widthBombTimer = 390 * scaleW
+            let heightBombTimer = 390 * scaleH
             
             let textTopPadding = 351 * scaleH 
-            let calendarTopPadding = 88.48 * scaleH / 2
+           // let bombTimerTopPadding = 0 * scaleH
             
             let datePickerTopPadding = 420 * scaleH / 2
             let textDateExam = 580 * scaleH
@@ -33,16 +39,16 @@ struct WelcomeView187: View {
             ZStack {
                 Color("welcomeBackgroudColor").ignoresSafeArea()
                 VStack{
-                    Image("calendar")
+                    Image("bombTimer")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: widthCalendar, height: heightCalendar)
-                        .padding(.top, calendarTopPadding)
+                        .frame(width: widthBombTimer, height: heightBombTimer)
+                    //.padding(.top, bombTimerTopPadding)
                     Spacer()
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("When is your Exam?")
+                    Text("What time do you prefer?")
                         .foregroundStyle(.white)
                         .font(.system(size: 24, weight: .semibold))
                 }
@@ -52,50 +58,22 @@ struct WelcomeView187: View {
                 
                 
                 VStack(alignment: .center) {
-                    DateTripleWheelPicker(
-                        date: $selectionDate,
-                        yearsRange: 1950...2050,
-                        textColor: .white,
-                        selectedTextColor: .white,
-                        unselectedOpacity: 0.6,
-                        font: .system(size: 20, weight: .regular),
-                        selectedFont: .system(size: 20, weight: .semibold),
-                        locale: Locale(identifier: "en_US") // порядок M-D-Y
-                    )
-                    .frame(height: 280)
-                    .padding(.horizontal, 22)
-                    .padding(.top, datePickerTopPadding)
+                    TimeTripleWheelPicker(hour: $hour, minute: $minute, period: $period)
                 }
-                HStack(spacing: 71){
-                    Text("I don’t know my exam date eyt")
-                        .foregroundStyle(.white)
+                .frame(width: 284, height: 214)
+                .padding(.top, datePickerTopPadding )
+                
+                
+                HStack(spacing: 8) {
+                    Text("Notify me")
+                        .foregroundColor(.white)
                         .font(.system(size: 16, weight: .regular))
-                        .padding(.top, textDateExam)
-                        
-                    Button(action: {
-                        checkmark.toggle()
-                    }) {
-                        ZStack {
-                            Circle()
-                                .stroke(Color.white.opacity(0.7), lineWidth: 1)
-                                .background(
-                                    Circle()
-                                        .fill(checkmark ? Color.button : Color.clear)
-                                )
-                                .frame(width: 22, height: 22)
-                            
-                            if checkmark {
-                                Image(systemName: "checkmark")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 12, height: 12)
-                                    .foregroundColor(.white)
-                            }
-                        }
-                    }
-                    .padding(.top, textDateExam)
-                    .buttonStyle(PlainButtonStyle())
+                    Toggle("", isOn: $selectionToggle)
+                        .labelsHidden()
                 }
+                .frame(maxWidth: .infinity, alignment: .center)
+                .padding(.top, textDateExam)
+                
                 VStack(alignment:.center) {
                     Button(action: {}) {
                         Text("Continue")
@@ -113,7 +91,6 @@ struct WelcomeView187: View {
                             .contentShape(RoundedRectangle(cornerRadius: 20 * scaleH, style: .continuous))
                     }
                     .padding(.top, previousTop)
-                    .padding(.leading, 22)
                 }
             }
         }
@@ -121,10 +98,5 @@ struct WelcomeView187: View {
 }
 
 #Preview {
-        WelcomeView187()
+        WelcomeView189()
     }
-    
-    
-  
-    
-    

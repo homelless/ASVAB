@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00B6BDE2F7FC3780041982E /* WelcomeView182.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B6BDD2F7FC3780041982E /* WelcomeView182.swift */; };
 		D04F57B02F7687B700C21351 /* WelcomeView186.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57AF2F7687B700C21351 /* WelcomeView186.swift */; };
-		D04F57B22F768DCD00C21351 /* WelcomeView187.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57B12F768DCD00C21351 /* WelcomeView187.swift */; };
+		D04F57B22F768DCD00C21351 /* WelcomeView188.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57B12F768DCD00C21351 /* WelcomeView188.swift */; };
 		D04F57B62F76B90600C21351 /* DateTripleWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F57B52F76B90600C21351 /* DateTripleWheelPicker.swift */; };
 		D054A3572F6FCF3700C5E141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D054A3532F6FCF3700C5E141 /* Assets.xcassets */; };
 		D054A3582F6FCF3700C5E141 /* ASVABApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A3542F6FCF3700C5E141 /* ASVABApp.swift */; };
 		D054A35E2F6FFE3200C5E141 /* WelcomeView190.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A35D2F6FFE3200C5E141 /* WelcomeView190.swift */; };
 		D054A3602F70036900C5E141 /* WelcomeView184.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A35F2F70036900C5E141 /* WelcomeView184.swift */; };
 		D054A3622F7578DC00C5E141 /* WelcomeView185.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054A3612F7578DB00C5E141 /* WelcomeView185.swift */; };
+		D0A98F2B2F7ABBB80025A4D2 /* WelcomeView189.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A98F2A2F7ABBB80025A4D2 /* WelcomeView189.swift */; };
+		D0A98F2D2F7BE3CC0025A4D2 /* TimeTripleWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A98F2C2F7BE3CC0025A4D2 /* TimeTripleWheelPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D00B6BDD2F7FC3780041982E /* WelcomeView182.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView182.swift; sourceTree = "<group>"; };
 		D04F57AF2F7687B700C21351 /* WelcomeView186.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView186.swift; sourceTree = "<group>"; };
-		D04F57B12F768DCD00C21351 /* WelcomeView187.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView187.swift; sourceTree = "<group>"; };
+		D04F57B12F768DCD00C21351 /* WelcomeView188.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView188.swift; sourceTree = "<group>"; };
 		D04F57B52F76B90600C21351 /* DateTripleWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTripleWheelPicker.swift; sourceTree = "<group>"; };
 		D054A3452F6FCF2800C5E141 /* ASVAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASVAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D054A3532F6FCF3700C5E141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +31,8 @@
 		D054A35D2F6FFE3200C5E141 /* WelcomeView190.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView190.swift; sourceTree = "<group>"; };
 		D054A35F2F70036900C5E141 /* WelcomeView184.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView184.swift; sourceTree = "<group>"; };
 		D054A3612F7578DB00C5E141 /* WelcomeView185.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView185.swift; sourceTree = "<group>"; };
+		D0A98F2A2F7ABBB80025A4D2 /* WelcomeView189.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView189.swift; sourceTree = "<group>"; };
+		D0A98F2C2F7BE3CC0025A4D2 /* TimeTripleWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTripleWheelPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				D04F57B52F76B90600C21351 /* DateTripleWheelPicker.swift */,
+				D0A98F2C2F7BE3CC0025A4D2 /* TimeTripleWheelPicker.swift */,
 			);
 			path = Helps;
 			sourceTree = "<group>";
@@ -78,11 +85,13 @@
 		D054A35B2F6FFDBB00C5E141 /* WelcomeViews */ = {
 			isa = PBXGroup;
 			children = (
-				D04F57B12F768DCD00C21351 /* WelcomeView187.swift */,
+				D0A98F2A2F7ABBB80025A4D2 /* WelcomeView189.swift */,
+				D04F57B12F768DCD00C21351 /* WelcomeView188.swift */,
 				D04F57AF2F7687B700C21351 /* WelcomeView186.swift */,
 				D054A3612F7578DB00C5E141 /* WelcomeView185.swift */,
 				D054A35D2F6FFE3200C5E141 /* WelcomeView190.swift */,
 				D054A35F2F70036900C5E141 /* WelcomeView184.swift */,
+				D00B6BDD2F7FC3780041982E /* WelcomeView182.swift */,
 			);
 			path = WelcomeViews;
 			sourceTree = "<group>";
@@ -168,12 +177,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D054A3582F6FCF3700C5E141 /* ASVABApp.swift in Sources */,
-				D04F57B22F768DCD00C21351 /* WelcomeView187.swift in Sources */,
+				D04F57B22F768DCD00C21351 /* WelcomeView188.swift in Sources */,
+				D0A98F2D2F7BE3CC0025A4D2 /* TimeTripleWheelPicker.swift in Sources */,
+				D0A98F2B2F7ABBB80025A4D2 /* WelcomeView189.swift in Sources */,
 				D054A35E2F6FFE3200C5E141 /* WelcomeView190.swift in Sources */,
 				D04F57B02F7687B700C21351 /* WelcomeView186.swift in Sources */,
 				D04F57B62F76B90600C21351 /* DateTripleWheelPicker.swift in Sources */,
 				D054A3602F70036900C5E141 /* WelcomeView184.swift in Sources */,
 				D054A3622F7578DC00C5E141 /* WelcomeView185.swift in Sources */,
+				D00B6BDE2F7FC3780041982E /* WelcomeView182.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
