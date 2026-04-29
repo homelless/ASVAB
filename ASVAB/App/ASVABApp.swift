@@ -1,9 +1,4 @@
-//
-//  ASVABApp.swift
-//  ASVAB
-//
-//  Created by MacBookAir on 22.03.26.
-//
+
 
 import SwiftUI
 

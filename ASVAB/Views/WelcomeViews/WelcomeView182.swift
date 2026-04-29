@@ -25,6 +25,7 @@ struct WelcomeView182: View {
                 let scaleW = w / baselineWidth
                 let scaleH = h / baselineHeight
                 
+                // адаптивные размеры для интерфейса
                 let widthImage = 394 * scaleW
                 let heightImage = 702 * scaleH
                 let offsetImage : CGFloat = 100 * scaleW
