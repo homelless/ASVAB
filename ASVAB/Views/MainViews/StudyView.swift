@@ -7,15 +7,15 @@ struct StudyView: View {
     
     // Пример массива категорий
     let categories: [PracticeCategory] = [
-        .init(title: "General Science", imageName: "function", progress: 0.7),
-        .init(title: "Arithmetic reasoning", imageName: "atom", progress: 0.4),
-        .init(title: "Word knowledge", imageName: "leaf", progress: 0.9),
-        .init(title: "Paragraph comprehension", imageName: "flask", progress: 0.2),
-        .init(title: "Mathematics knowledge", imageName: "flask", progress: 0.3),
-        .init(title: "Electronics information", imageName: "flask", progress: 0.6),
-        .init(title: "Auto & shot information", imageName: "flask", progress: 0.8),
-        .init(title: "Mechanical Comprehension", imageName: "flask", progress: 0.8),
-        .init(title: "Assembling object", imageName: "flask", progress: 0.8)
+        .init(title: "General Science", imageName: "General Science", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Arithmetic reasoning", imageName: "Arithmetic reasoning", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Word knowledge", imageName:  "Word knowledge", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Paragraph\ncomprehension", imageName: "Paragraph comprehension", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Mathematics\nknowledge", imageName: "Mathematics knowledge", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Electronics\ninformation", imageName: "Electronics information", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Auto & shot\ninformation", imageName: "Auto & shot information", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Mechanical\nComprehension", imageName: "Mechanical Comprehension", progressCircle: 1, progressCount: "1 of 159 questions completed"),
+        .init(title: "Assembling object", imageName: "Assembling object", progressCircle: 1, progressCount: "1 of 159 questions completed")
     ]
     
     
@@ -25,7 +25,7 @@ struct StudyView: View {
             GeometryReader { geo in
                 let w = geo.size.width
                 let h = geo.size.height
-                let tileSize = (w - 48) / 2
+               
                 
                 // Коэффициенты масштабирования относительно базового экрана
                 let scaleW = w / baselineWidth
@@ -106,7 +106,7 @@ struct StudyView: View {
                         Spacer(minLength: 0)
                     }
                     .padding(.horizontal, 16)
-                    
+                    // test tiles
                     LazyVGrid(columns: [
                         GridItem(.flexible()),
                         GridItem(.flexible())
@@ -115,7 +115,7 @@ struct StudyView: View {
                             NavigationLink {
                                 TestViewPractice(category: category)
                             } label: {
-                                PracticeTileView(category: category, size: tileSize)
+                                PracticeTileView(category: category)
                             }
                         }
                     }

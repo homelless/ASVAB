@@ -10,6 +10,6 @@ struct TestViewPractice: View {
     }
 }
 
-#Preview {
-    TestViewPractice(category: .init(title: "123", imageName: "home", progress: 0.5))
-}
+//#Preview {
+//    TestViewPractice(category: .init(title: "123", imageName: "home", progressCircle: 0.5))
+//}
