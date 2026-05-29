@@ -6,7 +6,7 @@ import SwiftUI
 struct ASVABApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView189()
+            RouteView()
         }
     }
 }

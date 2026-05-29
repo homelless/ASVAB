@@ -5,8 +5,8 @@ struct StudyView: View {
     private let baselineWidth: CGFloat = 393
     private let baselineHeight: CGFloat = 852
     
-    // Пример массива категорий
-    let categories: [PracticeCategory] = [
+    // Пример массива категорий заглушка
+    let categories: [PracticeCategoryModel] = [
         .init(title: "General Science", imageName: "General Science", progressCircle: 1, progressCount: "1 of 159 questions completed"),
         .init(title: "Arithmetic reasoning", imageName: "Arithmetic reasoning", progressCircle: 1, progressCount: "1 of 159 questions completed"),
         .init(title: "Word knowledge", imageName:  "Word knowledge", progressCircle: 1, progressCount: "1 of 159 questions completed"),
@@ -58,54 +58,66 @@ struct StudyView: View {
                     // practice progress
                     VStack{
                         HStack{
-                            Spacer()
-                            Circle()
-                                .trim(from: 0)
-                                .stroke(Color.orange, lineWidth: 6)
-                                .frame(width: 50, height: 50)
-                            Spacer()
-                            VStack{
-                                Text("cpractice progress")
-                                Text("questions")
+                            ZStack {
+                                Circle()
+                                    .trim(from: 0)
+                                    .stroke(Color.orange, lineWidth: 6)
+                                    .frame(width: 65 * scaleW, height: 65 * scaleH)
+                                Text("15%")
+                                    .font(.system(size: 12.95, weight: .bold))
                             }
+                            .padding(.leading, 16)
+                            
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("Practice progress")
+                                    .font(.system(size: 16, weight: .bold))
+                                Text("26 of 1142 questions completed")
+                                    .font(.system(size: 12, weight: .regular))
+                                    .foregroundStyle(.secondary)
+                            }
+                            .padding(.leading, 16)
                             Spacer()
                         }
                     }
                     .frame(width: 361 * scaleW, height: 77 * scaleH)
                     .background(Color.white)
                     .mask(RoundedRectangle(cornerRadius: 15, style: .continuous))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 16 * scaleH, style: .continuous)
-                            .stroke(Color.black, lineWidth: 1 * max(scaleW, scaleH))
-                    )
+                    .padding(.top, 14)
                     // correct rate
                     VStack{
                         HStack{
-                            Spacer()
-                            Circle()
-                                .trim(from: 0)
-                                .stroke(Color.blue, lineWidth: 6)
-                                .frame(width: 50, height: 50)
-                            Spacer()
-                            VStack{
-                                Text("correct rate")
-                                Text("questions")
+                            ZStack {
+                                Circle()
+                                    .trim(from: 0)
+                                    .stroke(Color.blue, lineWidth: 6)
+                                    .frame(width: 65 * scaleW, height: 65 * scaleH)
+                                Text("15%")
+                                    .font(.system(size: 12.95, weight: .bold))
                             }
+                            .padding(.leading, 16)
+                            VStack(alignment: .leading, spacing: 4){
+                                Text("Correct rate")
+                                    .font(.system(size: 16, weight: .bold))
+                                Text("16 of 1142 questions correct")
+                                    .font(.system(size: 12, weight: .regular))
+                                    .foregroundStyle(.secondary)
+                            }
+                            .padding(.leading, 16)
                             Spacer()
                         }
                     }
                     .frame(width: 361 * scaleW, height: 77 * scaleH)
                     .background(Color.white)
                     .mask(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 16 * scaleH, style: .continuous)
-                            .stroke(Color.black, lineWidth: 1 * max(scaleW, scaleH)))
                     // Practice by science
                     HStack{
                         Text("Practice by science")
+                            .font(.system(size: 16, weight: .semibold))
                         Spacer(minLength: 0)
                     }
                     .padding(.horizontal, 16)
+                    .padding(.top, 16)
+                    
                     // test tiles
                     LazyVGrid(columns: [
                         GridItem(.flexible()),
@@ -119,6 +131,7 @@ struct StudyView: View {
                             }
                         }
                     }
+                    .padding(.top, 16)
                 }
             }
         }

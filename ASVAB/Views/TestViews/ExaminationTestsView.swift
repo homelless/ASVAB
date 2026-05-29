@@ -1,10 +1,10 @@
 import SwiftUI
 
 // Заглушка экрана теста
-struct TestViewPractice: View {
-    let category: PracticeCategoryModel
+struct ExaminationTestsView: View {
+    let category: TestTileModel
     var body: some View {
-        Text("Начался тест по: \(category.title)")
+        Text("Начался тест по: \(category.text)")
             .font(.title)
             .padding()
     }

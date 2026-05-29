@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2787402FC08E9F0067F84C /* ExaminationTestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27873F2FC08E9F0067F84C /* ExaminationTestsView.swift */; };
+		CE8350B92FBDDF9800B18028 /* test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8350B82FBDDF9800B18028 /* test1.swift */; };
+		CE8350BB2FBE1B7600B18028 /* TestTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8350BA2FBE1B7600B18028 /* TestTileView.swift */; };
+		CE8350BD2FBE21D800B18028 /* TestTileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8350BC2FBE21D800B18028 /* TestTileModel.swift */; };
 		CE924CCC2FABC185003D23B7 /* задачи.md in Resources */ = {isa = PBXBuildFile; fileRef = CE924CCB2FABC185003D23B7 /* задачи.md */; };
 		D00B6BDE2F7FC3780041982E /* WelcomeView182.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B6BDD2F7FC3780041982E /* WelcomeView182.swift */; };
 		D04DFFE42F9B8E2800C1500F /* PracticeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DFFE32F9B8E2800C1500F /* PracticeCategoryModel.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE27873F2FC08E9F0067F84C /* ExaminationTestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationTestsView.swift; sourceTree = "<group>"; };
+		CE8350B82FBDDF9800B18028 /* test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1.swift; sourceTree = "<group>"; };
+		CE8350BA2FBE1B7600B18028 /* TestTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTileView.swift; sourceTree = "<group>"; };
+		CE8350BC2FBE21D800B18028 /* TestTileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTileModel.swift; sourceTree = "<group>"; };
 		CE924CCB2FABC185003D23B7 /* задачи.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "задачи.md"; sourceTree = "<group>"; };
 		D00B6BDD2F7FC3780041982E /* WelcomeView182.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView182.swift; sourceTree = "<group>"; };
 		D04DFFE32F9B8E2800C1500F /* PracticeCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCategoryModel.swift; sourceTree = "<group>"; };
@@ -71,6 +79,7 @@
 		CE924CCD2FABC253003D23B7 /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
+				CE27873F2FC08E9F0067F84C /* ExaminationTestsView.swift */,
 				D04DFFE52F9B8E8800C1500F /* TestViewPractice.swift */,
 			);
 			path = TestViews;
@@ -79,6 +88,7 @@
 		D04DFFE22F9B8E0F00C1500F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE8350BC2FBE21D800B18028 /* TestTileModel.swift */,
 				D04DFFE32F9B8E2800C1500F /* PracticeCategoryModel.swift */,
 			);
 			path = Model;
@@ -88,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D04DFFE82F9B9C5200C1500F /* PracticeTileView.swift */,
+				CE8350BA2FBE1B7600B18028 /* TestTileView.swift */,
 			);
 			path = ElementsViews;
 			sourceTree = "<group>";
@@ -151,7 +162,6 @@
 			children = (
 				D054A3542F6FCF3700C5E141 /* ASVABApp.swift */,
 				D0C9CEF42F892480006DE06A /* Route.swift */,
-				D0D6DC592F8BA8F500C954FC /* RouteView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 				D0C9CEF92F892EB4006DE06A /* TestsView.swift */,
 				D0C9CEFB2F892EC2006DE06A /* StatsView.swift */,
 				D0C9CEFD2F892ED0006DE06A /* SettingsView.swift */,
+				D0D6DC592F8BA8F500C954FC /* RouteView.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 		D0D6DC5B2F8BBEE300C954FC /* test file */ = {
 			isa = PBXGroup;
 			children = (
+				CE8350B82FBDDF9800B18028 /* test1.swift */,
 			);
 			path = "test file";
 			sourceTree = "<group>";
@@ -277,12 +289,16 @@
 				D04DFFE62F9B8E8800C1500F /* TestViewPractice.swift in Sources */,
 				D0A98F2B2F7ABBB80025A4D2 /* WelcomeView189.swift in Sources */,
 				D054A35E2F6FFE3200C5E141 /* WelcomeView190.swift in Sources */,
+				CE2787402FC08E9F0067F84C /* ExaminationTestsView.swift in Sources */,
 				D04F57B02F7687B700C21351 /* WelcomeView186.swift in Sources */,
 				D04F57B62F76B90600C21351 /* DateTripleWheelPicker.swift in Sources */,
+				CE8350B92FBDDF9800B18028 /* test1.swift in Sources */,
 				D054A3602F70036900C5E141 /* WelcomeView184.swift in Sources */,
 				D054A3622F7578DC00C5E141 /* WelcomeView185.swift in Sources */,
 				D0C9CEFA2F892EB4006DE06A /* TestsView.swift in Sources */,
+				CE8350BD2FBE21D800B18028 /* TestTileModel.swift in Sources */,
 				D0C9CEF52F892480006DE06A /* Route.swift in Sources */,
+				CE8350BB2FBE1B7600B18028 /* TestTileView.swift in Sources */,
 				D0C9CEF82F892EA8006DE06A /* StudyView.swift in Sources */,
 				D0C9CEFC2F892EC2006DE06A /* StatsView.swift in Sources */,
 				D00B6BDE2F7FC3780041982E /* WelcomeView182.swift in Sources */,
@@ -418,6 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMFNSK27YT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -449,6 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMFNSK27YT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
