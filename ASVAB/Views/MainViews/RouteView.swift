@@ -36,7 +36,6 @@ struct RouteView: View {
                         customTabBar(scaleW: scaleW, scaleH: scaleH)
                     }
                     .ignoresSafeArea(edges: .bottom)
-
                 }
             }
         }

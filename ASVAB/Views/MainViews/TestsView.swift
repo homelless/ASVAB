@@ -112,14 +112,14 @@ struct TestsView: View {
                             Text("Practice tests")
                                 .font(.system(size: 16, weight: .semibold))
                             Spacer()
-                            Button(action: {
-                                
-                            }, label: {
+                            NavigationLink {
+                                AllTestViews()
+                            } label: {
                                 Text("See all")
                                     .font(.system(size: 14, weight: .semibold))
                                     .underline()
                                     .foregroundStyle(.button)
-                            })
+                            }
                         }
                         .frame(width: 361 * scaleW, height: 13 * scaleH)
                         .padding(.top, 34)
@@ -134,7 +134,7 @@ struct TestsView: View {
                                         NavigationLink {
                                             ExaminationTestsView(category: category)
                                         } label: {
-                                            TestTileView(category: category, width: 142 * scaleW, height: 162 * scaleH, radius: 16)
+                                            TestTileView(category: category, width: 122 * scaleW, height: 162 * scaleH, radius: 16)
                                         }
                                     }
                                 }
@@ -148,13 +148,37 @@ struct TestsView: View {
                                 Image("imageFinalTest")
                                     .resizable()
                                     .scaledToFill()
-                                    .offset(y: 10)
+                                    .offset(y: 20)
                                     .frame(width: 363 * scaleW, height: 162 * scaleH)
                                     .clipped()
                                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                                 Color.gradientTestTile
                                     .frame(width: 363 * scaleW, height: 162 * scaleH)
                                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                                VStack(alignment: .leading){
+                                    Text("Final test")
+                                        .font(.system(size: 20, weight: .bold))
+                                        .foregroundStyle(.white)
+
+                                    Text("The Final test is the unlimate test of your\nkowledge. It covers all the topics you need to\npass exam")
+                                        .font(.system(size: 14, weight: .regular))
+                                        .foregroundStyle(.white)
+                                    VStack{
+                                        Button(action: {}){
+                                            Text("Start")
+                                                .font(.system(size: 10, weight: .semibold))
+                                                .foregroundStyle(.button)
+                                        }
+                                    }
+                                    .frame(width: 135 * scaleW, height: 28 * scaleH)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 6 * scaleH, style: .continuous)
+                                            .fill(Color.white)
+                                    )
+                                    .contentShape(RoundedRectangle(cornerRadius: 20 * scaleH, style: .continuous))
+                                }
+                                .padding(.trailing, 50 * scaleW)
+                                .padding(.top, 15)
                             }
                         }
                         .padding(.top, 34 * scaleH)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE2787402FC08E9F0067F84C /* ExaminationTestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27873F2FC08E9F0067F84C /* ExaminationTestsView.swift */; };
+		CE7573832FCC56A3006E49F8 /* AllTestViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7573822FCC56A3006E49F8 /* AllTestViews.swift */; };
+		CE7573852FCC7E04006E49F8 /* SubjectStatisticsTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7573842FCC7E04006E49F8 /* SubjectStatisticsTileView.swift */; };
 		CE8350B92FBDDF9800B18028 /* test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8350B82FBDDF9800B18028 /* test1.swift */; };
 		CE8350BB2FBE1B7600B18028 /* TestTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8350BA2FBE1B7600B18028 /* TestTileView.swift */; };
 		CE8350BD2FBE21D800B18028 /* TestTileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8350BC2FBE21D800B18028 /* TestTileModel.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		CE27873F2FC08E9F0067F84C /* ExaminationTestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationTestsView.swift; sourceTree = "<group>"; };
+		CE7573822FCC56A3006E49F8 /* AllTestViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTestViews.swift; sourceTree = "<group>"; };
+		CE7573842FCC7E04006E49F8 /* SubjectStatisticsTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectStatisticsTileView.swift; sourceTree = "<group>"; };
 		CE8350B82FBDDF9800B18028 /* test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1.swift; sourceTree = "<group>"; };
 		CE8350BA2FBE1B7600B18028 /* TestTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTileView.swift; sourceTree = "<group>"; };
 		CE8350BC2FBE21D800B18028 /* TestTileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTileModel.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			children = (
 				D04DFFE82F9B9C5200C1500F /* PracticeTileView.swift */,
 				CE8350BA2FBE1B7600B18028 /* TestTileView.swift */,
+				CE7573842FCC7E04006E49F8 /* SubjectStatisticsTileView.swift */,
 			);
 			path = ElementsViews;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 		D0C9CEF32F8922C1006DE06A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE7573822FCC56A3006E49F8 /* AllTestViews.swift */,
 				CE924CCD2FABC253003D23B7 /* TestViews */,
 				D04DFFE72F9B9C2E00C1500F /* ElementsViews */,
 				D0C9CEF62F892E2B006DE06A /* MainViews */,
@@ -290,6 +296,7 @@
 				D0A98F2B2F7ABBB80025A4D2 /* WelcomeView189.swift in Sources */,
 				D054A35E2F6FFE3200C5E141 /* WelcomeView190.swift in Sources */,
 				CE2787402FC08E9F0067F84C /* ExaminationTestsView.swift in Sources */,
+				CE7573832FCC56A3006E49F8 /* AllTestViews.swift in Sources */,
 				D04F57B02F7687B700C21351 /* WelcomeView186.swift in Sources */,
 				D04F57B62F76B90600C21351 /* DateTripleWheelPicker.swift in Sources */,
 				CE8350B92FBDDF9800B18028 /* test1.swift in Sources */,
@@ -297,6 +304,7 @@
 				D054A3622F7578DC00C5E141 /* WelcomeView185.swift in Sources */,
 				D0C9CEFA2F892EB4006DE06A /* TestsView.swift in Sources */,
 				CE8350BD2FBE21D800B18028 /* TestTileModel.swift in Sources */,
+				CE7573852FCC7E04006E49F8 /* SubjectStatisticsTileView.swift in Sources */,
 				D0C9CEF52F892480006DE06A /* Route.swift in Sources */,
 				CE8350BB2FBE1B7600B18028 /* TestTileView.swift in Sources */,
 				D0C9CEF82F892EA8006DE06A /* StudyView.swift in Sources */,

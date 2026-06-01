@@ -7,15 +7,15 @@ struct StudyView: View {
     
     // Пример массива категорий заглушка
     let categories: [PracticeCategoryModel] = [
-        .init(title: "General Science", imageName: "General Science", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Arithmetic reasoning", imageName: "Arithmetic reasoning", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Word knowledge", imageName:  "Word knowledge", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Paragraph\ncomprehension", imageName: "Paragraph comprehension", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Mathematics\nknowledge", imageName: "Mathematics knowledge", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Electronics\ninformation", imageName: "Electronics information", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Auto & shot\ninformation", imageName: "Auto & shot information", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Mechanical\nComprehension", imageName: "Mechanical Comprehension", progressCircle: 1, progressCount: "1 of 159 questions completed"),
-        .init(title: "Assembling object", imageName: "Assembling object", progressCircle: 1, progressCount: "1 of 159 questions completed")
+        .init(title: "General Science", imageName: "General Science", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Arithmetic reasoning", imageName: "Arithmetic reasoning", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Word knowledge", imageName:  "Word knowledge", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Paragraph\ncomprehension", imageName: "Paragraph comprehension", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Mathematics\nknowledge", imageName: "Mathematics knowledge", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Electronics\ninformation", imageName: "Electronics information", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Auto & shot\ninformation", imageName: "Auto & shot information", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Mechanical\nComprehension", imageName: "Mechanical Comprehension", progressCircle: 0.25, progressCount: "1 of 159 questions completed"),
+        .init(title: "Assembling object", imageName: "Assembling object", progressCircle: 0.25, progressCount: "1 of 159 questions completed")
     ]
     
     
@@ -60,6 +60,11 @@ struct StudyView: View {
                         HStack{
                             ZStack {
                                 Circle()
+                                .stroke(Color.circle, lineWidth: 6)
+                                    .rotationEffect(.degrees(-90))
+                                    .frame(width: 65 * scaleW, height: 65 * scaleH)
+                                
+                                Circle()
                                     .trim(from: 0)
                                     .stroke(Color.orange, lineWidth: 6)
                                     .frame(width: 65 * scaleW, height: 65 * scaleH)
@@ -87,6 +92,10 @@ struct StudyView: View {
                     VStack{
                         HStack{
                             ZStack {
+                                Circle()
+                                .stroke(Color.circle, lineWidth: 6)
+                                    .rotationEffect(.degrees(-90))
+                                    .frame(width: 65 * scaleW, height: 65 * scaleH)
                                 Circle()
                                     .trim(from: 0)
                                     .stroke(Color.blue, lineWidth: 6)
